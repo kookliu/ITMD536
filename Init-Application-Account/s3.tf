@@ -36,6 +36,3 @@ resource "aws_dynamodb_table" "terraform_state_lock" {
 }
 
 
-resource "aws_s3_bucket_policy" "terraform_state" {
-  bucket = aws_s3_bucket.terraform.id
-}
